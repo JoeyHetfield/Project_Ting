@@ -25,4 +25,7 @@ def exists_word(word, instance):
 
 
 def search_by_word(word, instance):
-    """Aqui irá sua implementação"""
+    exist = exists_word(word, instance)
+
+    if len(exist) == 0:
+        return list()

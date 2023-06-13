@@ -14,4 +14,6 @@ def txt_importer(path_file):
     with open(path_file) as file:
         lines = file.readlines()
 
+        lines = [line.rstrip() for line in lines]
+
     return lines

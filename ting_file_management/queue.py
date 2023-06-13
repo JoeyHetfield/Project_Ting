@@ -12,7 +12,11 @@ class Queue(AbstractQueue):
         self._data.append(value)
 
     def dequeue(self):
-        """Aqui irá sua implementação"""
+        if len(self._data) == 0:
+            return None
+        return self._data.pop(0)
 
     def search(self, index):
-        """Aqui irá sua implementação"""
+        if index > len(self._data):
+            return IndexError("Índice Inválido ou Inexistente")
+        return self._data[index]

@@ -1,4 +1,5 @@
 import sys
+import os
 
 
 def txt_importer(path_file):
@@ -6,6 +7,6 @@ def txt_importer(path_file):
         print("Formato inválido", file=sys.stderr)
         return None
 
-    if not path_file.exists(path_file):
-        print(f"Arquivo {path_file} não encontrado")
+    if not os.path.exists(path_file):
+        print(f"Arquivo {path_file} não encontrado", file=sys.stderr)
         return None

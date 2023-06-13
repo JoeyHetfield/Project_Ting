@@ -1,7 +1,10 @@
 # from ting_file_management.priority_queue import PriorityQueue
 
 
-# def test_basic_priority_queueing():
+def test_basic_priority_queueing():
+    pass
+
+
 #     teste_fila = PriorityQueue()
 #     teste_fila.enqueue("arquivo1.txt", 1)
 #     teste_fila.enqueue("arquivo2.txt", 6)

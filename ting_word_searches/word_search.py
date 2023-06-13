@@ -10,13 +10,13 @@ def exists_word(word, instance):
 
         for line in range(len(lines)):
             if word in lines[line].lower():
-                occurrences.append(line)
+                occurrences.append({"linha": line + 1})
 
         if len(occurrences) > 0:
             exist.append(
                 {
                     "palavra": word,
-                    "nome_do_arquivo": filename,
+                    "arquivo": filename,
                     "ocorrencias": occurrences,
                 }
             )

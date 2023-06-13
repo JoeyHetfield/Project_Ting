@@ -35,3 +35,5 @@ def file_metadata(instance, position):
     if position >= len(instance._data):
         print("Posição inválida", file=sys.stderr)
         return None
+
+    print(instance.search(position))

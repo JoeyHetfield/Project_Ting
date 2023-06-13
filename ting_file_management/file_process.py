@@ -1,9 +1,10 @@
-from file_management import txt_importer
+from ting_file_management.file_management import txt_importer
 
 
 def process(path_file, instance):
-    if instance.search(path_file):
-        return None
+    for item in instance._data:
+        if item["nome_do_arquivo"] == path_file:
+            return None
 
     imported_file = txt_importer(path_file)
 
@@ -12,6 +13,10 @@ def process(path_file, instance):
         "qtd_linhas": len(imported_file),
         "linhas_do_arquivo": imported_file,
     }
+
+    instance.enqueue(created_obj)
+
+    print(created_obj)
 
 
 def remove(instance):

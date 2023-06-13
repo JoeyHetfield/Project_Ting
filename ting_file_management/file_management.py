@@ -10,3 +10,8 @@ def txt_importer(path_file):
     if not os.path.exists(path_file):
         print(f"Arquivo {path_file} não encontrado", file=sys.stderr)
         return None
+
+    with open(path_file) as file:
+        lines = file.readlines()
+
+    return lines

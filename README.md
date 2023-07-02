@@ -1,13 +1,18 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Project Ting
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+### Description
+This project simulates the document indexing algorithm similar to Google's. It allows users to attach text files and perform search operations on those files.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+With the vast amount of information available on the web, finding what you need would be nearly impossible without any assistance in organizing it. 
+Google's classification systems organize hundreds of billions of web pages in the search index to provide the most useful and relevant results in a fraction of a second. Additionally, Google also focuses on presenting the results in a way that helps users find what they are looking for with even more ease.
+
+### Objective
+The objective of this project is to implement a program that enables users to attach text files and perform search operations on them, similar to an indexing algorithm. The program will consist of two main modules: the File Management module and the Search module.
+
+## Installation
+Clone the repository:
+
+>   git clone git@github.com:JoeyHetfield/Project_Ting.git
+
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
